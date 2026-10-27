@@ -1,1 +1,35 @@
-Upload the answer here
+mport java.util.Scanner;
+public class IT26102586Lab5Q1{
+    public static void main(String[] args) {
+        int numberOne, numberTwo, numberThree, smallest, largest;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the number 1");
+        numberOne = input.nextInt();
+        System.out.println("Enter the number 2");
+        numberTwo = input.nextInt();
+        System.out.println("Enter the number 3");
+        numberThree = input.nextInt();
+
+        smallest = numberOne;
+        largest = numberOne;
+
+        if (numberTwo < smallest) {
+            smallest = numberTwo;
+        }
+        if (numberThree < smallest) {
+            smallest = numberThree;
+        }
+        if (numberTwo > largest) {
+            largest = numberTwo;
+        }
+        if (numberThree > largest) {
+            largest = numberThree;
+        }
+
+        System.out.println("Enter number are" + numberOne + " " + numberTwo + " " + numberThree);
+        System.out.println("Largest number" + largest);
+        System.out.println("smallest number" + smallest);
+    }
+}
